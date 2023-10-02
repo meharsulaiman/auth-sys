@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MERN Auth System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #eee;
+    }
+
+    div {
+      background-color: #ffff;
+      padding: 40px 60px;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+      color: #333;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p>API is live go to <a id='demo'>Link</a></p>
+  </div>
+</body>
+<script>
+  document.getElementById("demo").href =
+    window.location.href + "api/v1/auth/login";
+</script>
+
+</html>
